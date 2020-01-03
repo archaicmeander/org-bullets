@@ -22,10 +22,8 @@
 
 ;;; Commentary:
 
-;; This is a fork by archaic_meander, who is not an experienced programmer, and
-;; this repository should not be trusted over the original.
-;; The original project is hosted at https://github.com/sabof/org-bullets
-;; The latest version, and all the relevant information, can be found there.
+;; The project is hosted at https://github.com/sabof/org-bullets
+;; The latest version, and all the relevant information can be found there.
 
 ;;; Code:
 
@@ -36,13 +34,16 @@
   :group 'org-appearance)
 
 ;; A nice collection of unicode bullets:
+;; http://nadeausoftware.com/articles/2007/11/latency_friendly_customized_bullets_using_unicode_characters
 (defcustom org-bullets-bullet-list
   '(;;; Large
-    "▶"
-    "►"
-    "▸"
-    "●"
-    "•"
+    "◉"
+    "○"
+    "✸"
+    "✿"
+    ;; ♥ ● ◇ ✚ ✜ ☯ ◆ ♠ ♣ ♦ ☢ ❀ ◆ ◖ ▶
+    ;;; Small
+    ;; ► • ★ ▸
     )
   "This variable contains the list of bullets.
 It can contain any number of symbols, which will be repeated."
